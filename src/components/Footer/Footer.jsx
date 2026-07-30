@@ -1,20 +1,25 @@
 import "./Footer.css";
 
 function Footer() {
-  const year = new Date().getFullYear();
-
   return (
     <footer className="footer">
       <div className="footer-container">
-        <h3 className="footer-logo">CMN</h3>
 
+        {/* Logo */}
+        <h2 className="footer-logo">
+          Chandan <span>M Nagur</span>
+        </h2>
+
+        {/* Description */}
         <p className="footer-text">
           Building modern and responsive web experiences.
         </p>
 
-        <div className="social-links">
+        {/* Social Links */}
+        <div className="footer-social">
+
           <a
-            href=""
+            href="https://www.linkedin.com/in/chandan-m-nagur-568686383/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -22,7 +27,7 @@ function Footer() {
           </a>
 
           <a
-            href=""
+            href="https://github.com/chandanmnagur07"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -32,11 +37,17 @@ function Footer() {
           <a href="mailto:chandanmnagur2007@gmail.com">
             Email
           </a>
+
         </div>
 
-        <p className="copyright">
-          © {year}Chandan M Nagur. All Rights Reserved.
+        {/* Divider */}
+        <div className="footer-line"></div>
+
+        {/* Copyright */}
+        <p className="footer-copy">
+          © {new Date().getFullYear()} Chandan M Nagur. All Rights Reserved.
         </p>
+
       </div>
     </footer>
   );

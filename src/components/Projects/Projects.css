@@ -5,8 +5,8 @@
 .projects {
   min-height: 100vh;
   padding: 80px 10%;
-  background: linear-gradient(135deg, #f8fbff, rgb(11, 119, 154));
-  transition: background 0.4s ease, color 0.4s ease;
+  background: linear-gradient(135deg, #ffffff, #f8f5ff, #fefce8);
+  transition: all 0.4s ease;
 }
 
 .projects-container {
@@ -14,23 +14,24 @@
   margin: auto;
 }
 
-/* Heading */
+/* ===========================
+   HEADING
+=========================== */
 
 .projects h2 {
   text-align: center;
   font-size: 2.8rem;
-  color: #2563eb;
+  color: #7C3AED;
   margin-bottom: 15px;
 }
 
 .projects-subtitle {
   text-align: center;
-  color: #555;
+  color: #64748B;
   font-size: 1.1rem;
   margin-bottom: 50px;
   line-height: 1.7;
 }
-
 
 /* ===========================
    PROJECT GRID
@@ -38,10 +39,9 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
 }
-
 
 /* ===========================
    PROJECT CARD
@@ -49,17 +49,17 @@
 
 .project-card {
   background: #ffffff;
+  border: 1px solid #EDE9FE;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.08);
+  transition: all 0.35s ease;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(37,99,235,0.2);
+  box-shadow: 0 20px 40px rgba(124, 58, 237, 0.18);
 }
-
 
 /* ===========================
    PROJECT IMAGE
@@ -72,7 +72,6 @@
   display: block;
 }
 
-
 /* ===========================
    PROJECT CONTENT
 =========================== */
@@ -83,16 +82,15 @@
 
 .project-content h3 {
   font-size: 1.5rem;
-  color: #2563eb;
+  color: #7C3AED;
   margin-bottom: 12px;
 }
 
 .project-content p {
-  color: #555;
+  color: #64748B;
   line-height: 1.7;
   margin-bottom: 18px;
 }
-
 
 /* ===========================
    TECHNOLOGY TAGS
@@ -108,12 +106,11 @@
 .tag {
   padding: 6px 14px;
   border-radius: 20px;
-  background: #dbeafe;
-  color: #2563eb;
+  background: #EDE9FE;
+  color: #7C3AED;
   font-size: 0.85rem;
   font-weight: 600;
 }
-
 
 /* ===========================
    BUTTONS
@@ -129,108 +126,91 @@
   padding: 10px 22px;
   border-radius: 8px;
   font-weight: 600;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
-
 .live-btn {
-  background: #2563eb;
+  background: linear-gradient(135deg, #7C3AED, #9333EA);
   color: white;
 }
 
 .live-btn:hover {
-  background: #1d4ed8;
+  background: linear-gradient(135deg, #6D28D9, #7C3AED);
 }
 
-
 .github-btn {
-  border: 2px solid #2563eb;
-  color: #2563eb;
+  border: 2px solid #7C3AED;
+  color: #7C3AED;
 }
 
 .github-btn:hover {
-  background: #2563eb;
+  background: #7C3AED;
   color: white;
 }
-
 
 /* ===========================
    DARK MODE
 =========================== */
 
 body.dark-mode .projects {
-
-  /* Different from About and Skills */
-  background: linear-gradient(135deg,  #0f172a, #1e293b, #111827);
+  background: linear-gradient(135deg, #0F172A, #1E1B4B, #2E1065);
 }
-
 
 body.dark-mode .projects h2 {
-  color: #c4b5fd;
+  color: #FACC15;
 }
-
 
 body.dark-mode .projects-subtitle {
-  color: #ddd6fe;
+  color: #D1D5DB;
 }
-
 
 body.dark-mode .project-card {
-  background: rgba(255,255,255,0.08);
+  background: rgba(30, 27, 75, 0.75);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,0.12);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  border: 1px solid rgba(196, 181, 253, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
-
 
 body.dark-mode .project-card:hover {
-  box-shadow: 0 15px 35px rgba(196,181,253,0.25);
+  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.30);
 }
-
 
 body.dark-mode .project-content h3 {
-  color: #c4b5fd;
+  color: #FACC15;
 }
-
 
 body.dark-mode .project-content p {
-  color: #e5e7eb;
+  color: #E5E7EB;
 }
-
 
 body.dark-mode .tag {
-  background: rgba(196,181,253,0.2);
-  color: #ddd6fe;
+  background: rgba(124, 58, 237, 0.25);
+  color: #DDD6FE;
 }
-
 
 body.dark-mode .live-btn {
-  background: #8b5cf6;
+  background: linear-gradient(135deg, #8B5CF6, #A855F7);
 }
-
 
 body.dark-mode .live-btn:hover {
-  background: #7c3aed;
+  background: linear-gradient(135deg, #7C3AED, #9333EA);
 }
-
 
 body.dark-mode .github-btn {
-  border-color: #c4b5fd;
-  color: #c4b5fd;
+  border-color: #FACC15;
+  color: #FACC15;
 }
-
 
 body.dark-mode .github-btn:hover {
-  background: #c4b5fd;
-  color: #1e1b4b;
+  background: #FACC15;
+  color: #1E1B4B;
 }
 
-
 /* ===========================
-   RESPONSIVE DESIGN
+   RESPONSIVE
 =========================== */
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
   .projects {
     padding: 60px 8%;
@@ -242,6 +222,10 @@ body.dark-mode .github-btn:hover {
 
   .projects-subtitle {
     font-size: 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 
   .project-image {
@@ -257,8 +241,7 @@ body.dark-mode .github-btn:hover {
   }
 }
 
-
-@media(max-width:480px){
+@media (max-width: 480px) {
 
   .project-image {
     height: 180px;

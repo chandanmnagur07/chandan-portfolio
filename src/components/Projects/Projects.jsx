@@ -12,7 +12,7 @@ function Projects() {
       image: weather,
       description:
         "A real-time weather application built using React and the OpenWeather API.",
-      technologies: ["React", "API", "CSS"],
+      technologies: ["API", "WeatherAPI", "tailwind"],
       live: "#",
       github: "#",
     },
@@ -22,7 +22,7 @@ function Projects() {
       image: Portfolio,
       description:
         "A personal portfolio website showcasing my skills, projects, and contact information.",
-      technologies: ["React", "JavaScript", "CSS"],
+      technologies: ["HTML", "CSS", "JavaScript", "React"],
       live: "#",
       github: "#",
     },
@@ -32,7 +32,7 @@ function Projects() {
       image: Ecommerce,
       description:
         "A modern, full-stack e-commerce platform built with [Framework/Language], featuring secure checkout, real-time inventory management, and an admin dashboard.",
-      technologies: ["React", "Local Storage"],
+      technologies: ["React", "Local Storage", "Node.js"],
       live: "#",
       github: "#",
     },
