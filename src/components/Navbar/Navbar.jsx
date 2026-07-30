@@ -6,53 +6,32 @@ function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen((prev) => !prev);
+    setMenuOpen(!menuOpen);
   };
 
   const toggleTheme = () => {
     document.body.classList.toggle("dark-mode");
-    setDarkMode((prev) => !prev);
-  };
-
-  const closeMenu = () => {
-    setMenuOpen(false);
+    setDarkMode(!darkMode);
   };
 
   return (
     <header className="site-header">
       <nav className="navbar">
+
         {/* Logo */}
         <div className="logo">CMN</div>
 
-        {/* Navigation Links */}
-        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li>
-            <a href="#about" onClick={closeMenu}>
-              About
-            </a>
-          </li>
-
-          <li>
-            <a href="#skills" onClick={closeMenu}>
-              Skills
-            </a>
-          </li>
-
-          <li>
-            <a href="#projects" onClick={closeMenu}>
-              Projects
-            </a>
-          </li>
-
-          <li>
-            <a href="#contact" onClick={closeMenu}>
-              Contact
-            </a>
-          </li>
+        {/* Navigation */}
+        <ul className={menuOpen ? "nav-links active" : "nav-links"}>
+          <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
+          <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
+          <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
+          <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
         </ul>
 
-        {/* Buttons */}
+        {/* Right Side Buttons */}
         <div className="nav-buttons">
+
           <button
             className="theme-btn"
             onClick={toggleTheme}
@@ -64,11 +43,13 @@ function Navbar() {
           <button
             className="menu-btn"
             onClick={toggleMenu}
-            aria-label="Toggle Menu"
+            aria-label="Menu"
           >
-            ☰
+            &#9776;
           </button>
+
         </div>
+
       </nav>
     </header>
   );
