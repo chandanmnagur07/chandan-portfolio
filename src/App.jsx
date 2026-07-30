@@ -7,19 +7,16 @@ import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <Navbar />
-    <Hero />
-    <About />
-     <Skill />
-    <Projects />
-    <Contact />
-    <Footer /> 
+      <Navbar />
+      <Hero />
+      <About />
+      <Skill />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
   )
 }
