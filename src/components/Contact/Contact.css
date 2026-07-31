@@ -2,225 +2,389 @@
    CONTACT SECTION
 =========================== */
 
-.contact {
-  min-height: 100vh;
-  padding: 80px 10%;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(135deg, #ffffff, #f8f5ff, #eef2ff);
-  transition: background 0.4s ease, color 0.4s ease;
+.contact{
+    width:100%;
+    padding:80px 8%;
+    box-sizing:border-box;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#ffffff,#f8f5ff,#eef2ff);
+
+    transition:.4s;
 }
 
-.contact-container {
-  max-width: 900px;
-  width: 100%;
-  margin: auto;
+.contact-container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
 }
 
 /* ===========================
    HEADING
 =========================== */
 
-.contact h2 {
-  text-align: center;
-  font-size: 2.8rem;
-  color: #4C1D95;
-  margin-bottom: 15px;
+.contact h2{
+
+    text-align:center;
+
+    font-size:clamp(2rem,4vw,2.8rem);
+
+    color:#4C1D95;
+
+    margin-bottom:15px;
+
 }
 
-.contact-subtitle {
-  text-align: center;
-  max-width: 750px;
-  margin: 0 auto 45px;
-  line-height: 1.8;
-  font-size: 1.05rem;
-  color: #64748B;
+.contact-subtitle{
+
+    max-width:700px;
+
+    margin:0 auto 45px;
+
+    text-align:center;
+
+    line-height:1.8;
+
+    color:#64748B;
+
+    font-size:1.05rem;
+
 }
 
-.contact-subtitle strong {
-  color: #7C3AED;
+.contact-subtitle strong{
+
+    color:#7C3AED;
+
 }
 
 /* ===========================
    FORM
 =========================== */
 
-.contact-form {
-  background: #ffffff;
-  padding: 40px;
-  border-radius: 20px;
-  border: 1px solid #7610e2;
-  box-shadow: 0 15px 35px rgba(124,58,237,.10);
+.contact-form{
+
+    width:100%;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    border:1px solid #7610e2;
+
+    box-shadow:0 15px 35px rgba(124,58,237,.10);
+
+    box-sizing:border-box;
+
 }
 
 /* ===========================
    INPUT GROUP
 =========================== */
 
-.input-group {
-  margin-bottom: 22px;
+.input-group{
+
+    width:100%;
+
+    margin-bottom:22px;
+
 }
 
-.input-group label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 600;
-  color: #1512b3;
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#1512b3;
+
 }
 
 .input-group input,
-.input-group textarea {
-  width: 100%;
-  padding: 15px 18px;
-  border-radius: 12px;
-  border: 2px solid #3514ca;
-  outline: none;
-  font-size: 1rem;
-  color: #09090a;
-  background: #f4f2f2;
-  transition: .3s;
-  box-sizing: border-box;
+.input-group textarea{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border-radius:12px;
+
+    border:2px solid #3514ca;
+
+    outline:none;
+
+    background:#f4f2f2;
+
+    color:#09090a;
+
+    font-size:1rem;
+
+    font-family:inherit;
+
+    transition:.3s;
+
+    box-sizing:border-box;
+
 }
 
 .input-group input::placeholder,
-.input-group textarea::placeholder {
-  color: #94A3B8;
+.input-group textarea::placeholder{
+
+    color:#94A3B8;
+
 }
 
 .input-group input:focus,
-.input-group textarea:focus {
-  border-color: #7C3AED;
-  box-shadow: 0 0 0 4px rgba(124,58,237,.15);
+.input-group textarea:focus{
+
+    border-color:#7C3AED;
+
+    box-shadow:0 0 0 4px rgba(124,58,237,.15);
+
 }
 
-.input-group textarea {
-  min-height: 180px;
-  resize: vertical;
+.input-group textarea{
+
+    min-height:180px;
+
+    resize:vertical;
+
 }
 
 /* ===========================
    BUTTON
 =========================== */
 
-.contact-btn {
-  width: 100%;
-  padding: 15px;
-  border: none;
-  border-radius: 12px;
-  background: linear-gradient(135deg,#7C3AED,#9333EA);
-  color: white;
-  font-size: 1.05rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: .3s ease;
+.contact-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#7C3AED,#9333EA);
+
+    color:white;
+
+    font-size:1.05rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
 }
 
-.contact-btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 15px 30px rgba(124,58,237,.30);
+.contact-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 30px rgba(124,58,237,.30);
+
 }
 
 /* ===========================
    DARK MODE
 =========================== */
 
-body.dark-mode .contact {
-  background: linear-gradient(135deg,#0F172A,#1E1B4B,#2E1065);
+body.dark-mode .contact{
+
+    background:linear-gradient(
+        135deg,
+        #0F172A,
+        #1E1B4B,
+        #2E1065
+    );
+
 }
 
-body.dark-mode .contact h2 {
-  color: #FACC15;
+body.dark-mode .contact h2{
+
+    color:#FACC15;
+
 }
 
-body.dark-mode .contact-subtitle {
-  color: #CBD5E1;
+body.dark-mode .contact-subtitle{
+
+    color:#CBD5E1;
+
 }
 
-body.dark-mode .contact-subtitle strong {
-  color: #FACC15;
+body.dark-mode .contact-subtitle strong{
+
+    color:#FACC15;
+
 }
 
-body.dark-mode .contact-form {
-  background: rgba(30,27,75,.80);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(196,181,253,.18);
-  box-shadow: 0 15px 35px rgba(0,0,0,.35);
+body.dark-mode .contact-form{
+
+    background:rgba(30,27,75,.80);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(196,181,253,.18);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
 }
 
-body.dark-mode .input-group label {
-  color: white;
+body.dark-mode .input-group label{
+
+    color:white;
+
 }
 
 body.dark-mode .input-group input,
-body.dark-mode .input-group textarea {
-  background: rgba(255,255,255,.05);
-  border: 2px solid #4C1D95;
-  color: white;
+body.dark-mode .input-group textarea{
+
+    background:rgba(255,255,255,.05);
+
+    border:2px solid #4C1D95;
+
+    color:white;
+
 }
 
 body.dark-mode .input-group input::placeholder,
-body.dark-mode .input-group textarea::placeholder {
-  color: #CBD5E1;
+body.dark-mode .input-group textarea::placeholder{
+
+    color:#CBD5E1;
+
 }
 
 body.dark-mode .input-group input:focus,
-body.dark-mode .input-group textarea:focus {
-  border-color: #C4B5FD;
-  box-shadow: 0 0 0 4px rgba(196,181,253,.15);
+body.dark-mode .input-group textarea:focus{
+
+    border-color:#C4B5FD;
+
+    box-shadow:0 0 0 4px rgba(196,181,253,.15);
+
 }
 
-body.dark-mode .contact-btn {
-  background: linear-gradient(135deg,#5012e1,#8308f5);
+body.dark-mode .contact-btn{
+
+    background:linear-gradient(135deg,#5012e1,#8308f5);
+
 }
 
-body.dark-mode .contact-btn:hover {
-  box-shadow: 0 15px 30px rgba(168,85,247,.35);
+body.dark-mode .contact-btn:hover{
+
+    box-shadow:0 15px 30px rgba(168,85,247,.35);
+
 }
 
 /* ===========================
-   RESPONSIVE DESIGN
+   LAPTOP
 =========================== */
 
-@media (max-width:768px){
+@media(max-width:1200px){
 
 .contact{
-padding:70px 8%;
+
+padding:80px 7%;
+
+}
+
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(max-width:992px){
+
+.contact{
+
+padding:70px 6%;
+
+}
+
+.contact-form{
+
+padding:35px;
+
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.contact{
+
+padding:60px 5%;
+
 }
 
 .contact h2{
-font-size:2.3rem;
+
+font-size:2.2rem;
+
 }
 
 .contact-subtitle{
+
 font-size:1rem;
+
+margin-bottom:35px;
+
 }
 
 .contact-form{
-padding:30px;
-}
+
+padding:28px;
 
 }
 
-@media (max-width:480px){
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media(max-width:480px){
 
 .contact{
-padding:60px 6%;
+
+padding:50px 20px;
+
 }
 
 .contact h2{
+
 font-size:2rem;
+
 }
 
 .contact-subtitle{
+
 font-size:.95rem;
+
 }
 
 .contact-form{
-padding:22px;
+
+padding:20px;
+
 }
 
 .contact-btn{
+
 font-size:1rem;
+
 }
 
 }
