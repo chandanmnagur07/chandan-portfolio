@@ -41,7 +41,7 @@
 .logo{
     font-size:2rem;
     font-weight:700;
-    color:#FACC15;
+    color:#f0efeb;
     letter-spacing:2px;
     cursor:pointer;
     flex-shrink:0;
@@ -140,29 +140,29 @@
 ========================= */
 
 body.dark-mode .navbar{
-    background:#2E1065;
+    background:#d2d7da;
 }
 
 body.dark-mode .logo{
-    color:#FACC15;
+    color:#171614;
 }
 
 body.dark-mode .nav-links li a{
-    color:#fff;
+    color:#000000;
 }
 
 body.dark-mode .nav-links li a::after{
-    background:#FACC15;
+    background:#f70303;
 }
 
 body.dark-mode .theme-btn,
 body.dark-mode .menu-btn{
-    background:#8B5CF6;
+    background:#3206e6;
 }
 
 body.dark-mode .theme-btn:hover,
 body.dark-mode .menu-btn:hover{
-    background:#7C3AED;
+    background:#f8f0f0;
 }
 
 /* =========================

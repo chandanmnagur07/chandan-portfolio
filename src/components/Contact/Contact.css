@@ -201,8 +201,8 @@ body.dark-mode .contact{
 
     background:linear-gradient(
         135deg,
-        #0F172A,
-        #1E1B4B,
+        #2E1065,
+        #2E1065,
         #2E1065
     );
 
@@ -228,7 +228,7 @@ body.dark-mode .contact-subtitle strong{
 
 body.dark-mode .contact-form{
 
-    background:rgba(30,27,75,.80);
+    background:rgba(80, 74, 159, 0.8);
 
     backdrop-filter:blur(12px);
 
@@ -249,7 +249,7 @@ body.dark-mode .input-group textarea{
 
     background:rgba(255,255,255,.05);
 
-    border:2px solid #4C1D95;
+    border:2px solid #edeeee;
 
     color:white;
 

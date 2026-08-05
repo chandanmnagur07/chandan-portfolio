@@ -12,7 +12,7 @@ function Projects() {
       image: weather,
       description:
         "A real-time weather application built using React and the OpenWeather API.",
-      technologies: ["API", "WeatherAPI", "tailwind"],
+      technologies: ["Weather-API", "Tail-Wind", "Open-weather API"],
       live: "#",
       github: "#",
     },
@@ -22,7 +22,7 @@ function Projects() {
       image: Portfolio,
       description:
         "A personal portfolio website showcasing my skills, projects, and contact information.",
-      technologies: ["HTML", "CSS", "JavaScript", "React"],
+      technologies: ["HTML 5", "CSS 3", "Java-Script", "React"],
       live: "#",
       github: "#",
     },
@@ -31,8 +31,8 @@ function Projects() {
       title: "E-commerce",
       image: Ecommerce,
       description:
-        "A modern, full-stack e-commerce platform built with [Framework/Language], featuring secure checkout, real-time inventory management, and an admin dashboard.",
-      technologies: ["React", "Local Storage", "Node.js"],
+        "A modern, full-stack e-commerce platform built with Framework, featuring secure checkout, real-time inventory management, and an admin dashboard.",
+      technologies: ["React", "Local Storage", "CSS"],
       live: "#",
       github: "#",
     },
@@ -41,8 +41,8 @@ function Projects() {
       title: "Student-Management",
       image: Student,
       description:
-        "A comprehensive Student Management System built with [Framework/Language] to track student enrollment, attendance, grading, and course schedules.",
-      technologies: ["React", "API"],
+        "A comprehensive Student Management System built with Framework to track student enrollment, attendance, grading, and course schedules.",
+      technologies: ["React", "SIS", "Cloud-Mobile Access", "RFID", "LMS"],
       live: "#",
       github: "#",
     },

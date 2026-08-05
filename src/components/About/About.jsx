@@ -4,13 +4,19 @@ function About() {
   return (
     <section className="about" id="about">
       <div className="about-container">
-        <div className="about-image">
-          <img src="portfolio1.jpeg" alt="Chandan M Nagur"/>
-        </div>
 
+        {/* Heading First */}
         <div className="about-content">
           <h2>About Me</h2>
+        </div>
 
+        {/* Image Second */}
+        <div className="about-image">
+          <img src="portfolio1.jpeg" alt="Chandan M Nagur" />
+        </div>
+
+        {/* Description */}
+        <div className="about-content">
           <p>
             Hello! I'm <strong>Chandan M Nagur</strong>, a passionate Full Stack
             Web Developer from Bengaluru. I enjoy creating responsive,
@@ -34,6 +40,7 @@ function About() {
             Let's Connect
           </a>
         </div>
+
       </div>
     </section>
   );

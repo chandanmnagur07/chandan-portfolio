@@ -34,7 +34,11 @@ function Footer() {
             GitHub
           </a>
 
-          <a href="mailto:chandanmnagur2007@gmail.com">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=chandanmnagur2007@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Email
           </a>
 
