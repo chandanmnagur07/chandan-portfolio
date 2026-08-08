@@ -132,7 +132,7 @@
 
   cursor: pointer;
 
-  background: #7C3AED;
+  background: #4307aa;
   color: #ffffff;
 
   font-size: 1.2rem;
@@ -214,7 +214,7 @@ body.dark-mode .menu-btn:hover {
     height: calc(100vh - 75px);
 
     /* KEEP PURPLE BACKGROUND */
-    background: #3f2861;
+    background: #9d84e2;
 
     display: flex;
     flex-direction: column;
@@ -253,7 +253,7 @@ body.dark-mode .menu-btn:hover {
 
   body.dark-mode .nav-links {
     /* KEEP EXISTING PURPLE */
-    background: #482a7f;
+    background: #310d74;
   }
 
   /* BLACK TEXT IN DARK MODE MOBILE */
