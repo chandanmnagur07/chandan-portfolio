@@ -42,7 +42,7 @@ function Projects() {
       image: Student,
       description:
         "A comprehensive Student Management System built with Framework to track student enrollment, attendance, grading, and course schedules.",
-      technologies: ["React", "SIS", "Cloud-Mobile Access", "RFID", "LMS"],
+      technologies: ["SIS", "Cloud-Mobile Access", "LMS"],
       live: "#",
       github: "#",
     },
